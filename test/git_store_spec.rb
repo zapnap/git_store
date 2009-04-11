@@ -2,8 +2,7 @@ require "#{File.dirname(__FILE__)}/../lib/git_store"
 
 describe GitStore do
 
-  #REPO = File.expand_path(File.dirname(__FILE__) + '/repo')
-  REPO = '/tmp/git_store_test'
+  REPO = File.expand_path(File.dirname(__FILE__) + '/repo')
 
   before(:each) do
     FileUtils.rm_rf REPO
